@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+</head>
+
+<body class="h-screen bg-gradient-to-tl from-red-100 to-lime-200">
+
+    <header class="w-3/4 mx-auto prose text-center py-3">
+        <h1>Welcome <span class="text-amber-600 my-8">Banking System</span></h1>
+        <div class="grid grid-cols-3 gap-4 ">
+            <div class="bg-lime-400 ">
+                <h4 class="text-white">Deposit</h4>
+                <h2 id="diposit" class="text-white">00</h2>
+            </div>
+            <div class="bg-emerald-400 ">
+                <h4 class="text-white">Withdraw</h4>
+                <h2 id="withdraw" class="text-white">00</h2>
+            </div>
+            <div class="bg-yellow-300">
+                <h4 class="text-white">Balence</h4>
+                <h2 id="blance" class="text-white">100</h2>
+            </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mt-4 text-left">
+            <div class="bg-indigo-300 p-3">
+                <h4>Please Diposit....</h4>
+                <input id="dipositMoney" type="text" placeholder="Enter your Deposite">
+                <button id="dipositBtn" class="px-3 py-1 text-white bg-lime-500 rounded-md mt-4">Deposit</button>
+            </div>
+            <div class="bg-indigo-300 p-3">
+                <h4>Please Withdraw....</h4>
+                <input id="withdrawMoney" type="text" placeholder="Enter your Withdraw">
+                <button id="withdrawBtn" class="px-3 py-1 text-white bg-emerald-500 rounded-md mt-4">Withdraw</button>
+            </div>
+            <div>
+                <button id="logout" class=" px-3 py-1 border-gray-800 border-2">Logout</button>
+            </div>
+        </div>
+
+        <script src="banking.js"></script>
+    </header>
+
+</body>
+
+</html>
